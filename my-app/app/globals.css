@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --depth-blue: #0a1128;
+    --pressure-cyan: #00f5ff;
+    --grid-line: rgba(0, 245, 255, 0.1);
+    --steel: #e0e6ed;
+    --hazard-red: #ff3e3e;
+    --dark-surface: #050a18;
+    
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@theme {
+  --color-depth-blue: var(--depth-blue);
+  --color-pressure-cyan: var(--pressure-cyan);
+  --color-steel: var(--steel);
+  --color-hazard-red: var(--hazard-red);
+  --color-dark-surface: var(--dark-surface);
+}
+
+@layer base {
+  body {
+    background-color: var(--depth-blue);
+    color: var(--steel);
+    @apply antialiased;
+  }
+}
+
+.hydraulic-grid {
+  background-image: 
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 30px 30px;
+}

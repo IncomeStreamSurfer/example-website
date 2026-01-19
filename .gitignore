@@ -1,13 +1,13 @@
 # DigitalOcean API Interface (Tools)
-node_modules/
-package.json
-package-lock.json
-tsconfig.json
-src/
-dist/
-.env
-.env.example
-.agent/
+/node_modules/
+/package.json
+/package-lock.json
+/tsconfig.json
+/src/
+/dist/
+/.env
+/.env.example
+/.agent/
 
 # Build artifacts
 build/
